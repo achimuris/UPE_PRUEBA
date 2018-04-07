@@ -42,6 +42,7 @@ namespace miPrimeraAplicacionDeConsola
             Console.WriteLine("El promedio es: " + promedio);
             Console.WriteLine();
             Console.WriteLine("Toque una tecla para salir");
+            Console.WriteLine("Muchas gracias por utilizar esto");
             Console.ReadLine();
         }
     }
