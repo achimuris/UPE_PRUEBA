@@ -9,37 +9,23 @@ namespace miPrimeraAplicacionDeConsola
     {
         static void Main(string[] args)
         {
+            string cadena = "";
+            double elPromedio = 0;
+            double nota1 = 0;
 
-            double nota1=0, nota2=0, nota3=0, nota4=0;
-            double promedio = 0;
+            for (int i = 1; i <= 4; i++)
+            {
+                cadena = "";
+                cadena = "Escriba la " + i.ToString() + "º nota: ";
+                Console.Write(cadena);
+
+                nota1= double.Parse(Console.ReadLine());
+                elPromedio = elPromedio + nota1;
+
+            }
+
             
-            /*
-                int soyUnINT;
-                DateTime soyUnDATE;
-                bool soyUnBOOL;
-                char soyUnCHAR;
-                string soyUnSTRING;
-            */
-
-
-           
-
-            Console.WriteLine("Escriba la primera nota: ");
-            nota1 = double.Parse(Console.ReadLine());
-
-            Console.WriteLine("Escriba la segunda nota: ");
-            nota2 = double.Parse(Console.ReadLine());
-
-            Console.WriteLine("Escriba la tercer nota: ");
-            nota3 = double.Parse(Console.ReadLine());
-
-            Console.WriteLine("Escriba la cuarta nota: ");
-            nota4 = double.Parse(Console.ReadLine());
-
-
-            promedio = (nota1 + nota2 + nota3 + nota4) / 4;
-
-            Console.WriteLine("El promedio es: " + promedio);
+            Console.WriteLine("El promedio final es: "+ elPromedio/4);
             Console.WriteLine();
             Console.WriteLine("Toque una tecla para salir");
             Console.WriteLine("Muchas gracias por utilizar esto");
